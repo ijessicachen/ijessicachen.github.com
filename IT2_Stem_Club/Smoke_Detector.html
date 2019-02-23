@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IT2: Smoke Detector</title>
+		
+		<style>
+			
+			.topnav{
+				
+				background-color: rgb( 200, 117, 200 );
+				overflow: hidden;
+				position: -webkit-sticky;
+				position: sticky;
+				top: 10;
+				
+			}
+			
+			.topnav a{ 
+				
+				float: left;
+				color: rgb(0, 0, 0);
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+				position: -webkit-sticky;
+				position: sticky;
+				top: 10;
+				
+			}
+			
+			.topnav a:hover {
+			  background-color: rgb(255, 255, 255);
+			  color: black;
+			}
+			
+			.topnav a.active {
+				
+			  background-color: #4CAF50;
+			  color: white;
+			  
+			}
+			
+			.dropbtn {
+			  background-color: #3498DB;
+			  color: white;
+			  padding: 16px;
+			  font-size: 16px;
+			  border: none;
+			  cursor: pointer;
+			}
+			
+			.dropbtn:hover, .dropbtn:focus {
+			  background-color: #2980B9;
+			}
+			
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+			
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f1f1f1;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+			
+			.dropdown-content a {
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			}
+			
+			.dropdown-content a:hover {background-color: #ddd}
+			
+			.show {display:block;}
+			
+			
+			#code{
+				
+				background-color: lightblue ;
+				height: 200px;
+				overflow: scroll;
+			}
+			
+			.Paragraph_1{
+				
+				padding-left: 29px;
+				
+			}
+			
+			.Paragraph_2{
+				
+				padding-left: 80px;
+				
+			}
+			
+			#IT2{
+				
+				background-color: rgb(0, 100, 100);
+				border: 10px;
+				border-color: rgb(255, 255, 255);
+				color: white;
+				padding: 15px 25px;
+				text-align: center;
+				font-size: 16px ;
+			}
+		
+			.sticky{
+				
+				position: -webkit-sticky;
+				position: sticky;
+				top: 10px;
+			}
+			
+			.header{
+				
+				color: rgb( 200, 117, 200);
+				
+			}
+			
+			#title{
+				
+				color: rgb( 220, 50, 0);
+			}
+			
+			.sidebar {
+				
+				height: 92%;
+				width:160px;
+				position: fixed;
+				z-index: 1;
+				top:30;
+				left: 0;
+				background-color: rgb(0, 0, 0);
+				overflow-x: hidden;
+				padding-top: 16px;
+				
+			}
+			
+			.sidebar a {
+				
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 20px;
+				color: rgb(200, 117, 200);
+				display: block;
+				
+			}
+			
+			.sidebar a:hover {
+				
+				background-color: rgb( 255, 255, 255);
+				
+			}
+			
+			.main {
+				
+				margin-left: 160px;
+				padding: 0px 10px;
+				
+			}
+			
+			#main_text{
+				
+				padding-left: 180px;
+				
+			}
+			
+			
+		</style>
+    </head>
+    <body>
+		
+		<div class="sticky">
+		<div class="topnav">
+		  <a class="active" href="">IT2</a>
+		  <a href="">Projects</a>
+		  <div class="dropdown">
+		    <button class="dropbtn">Examples</button>
+		    <div class="dropdown-content">
+		    <a href="https://docs.google.com/presentation/d/12Us_u2uj7KtdO7S6xS-QItENCWjyy9ZlEXOKE36CFv0/edit#slide=id.p">Slides Presentation</a>
+		    <a href="https://www.youtube.com/watch?v=Dv93dmciNZo">Video</a>
+		    </div>
+		  </div>
+		  <a href="#contact">Shopping</a><!-- Dropdown -->
+		  
+		</div>
+		</div>	
+		
+		<div class = "sidebar">
+			<a href="#description"> Description</a>
+			<a href="#materials"> Materials </a>
+			<a href="#diagram"> Diagram </a>
+			<a href="#code"> Code </a>
+		</div>
+		
+		<div id= "main_text">
+        <h1 id = "title"> Arduino Smoke Detector </h1>
+        <p> By: <strong> April Fools!</strong> ( Shiloh and Jessica ) </p><br>
+        
+        <h3 class = "header" id = "description"> Description</h4>
+        <p class = "Paragraph_1"> Our project is a homemade, shabby, flammable, inefficient replica of a modern type of fire alarm. This device is useful because it can save lives by detecting whenever there is a fire.<br><br>
+			There are three types of fire alarms: ionization, photoelectric, and ionization/photoelectric. An ionization smoke alarm has an ionization chamber in it, and that's basically two plates with a voltage across them. This smoke alarm also has a radioactive source of ionizing radiation. These work together like this: the particles generated ionize the oxygen and nitrogen atoms of the air in the chamber. Basically, ionizing knocks electrons off of atoms. The electron without an atom has a negative charge, while the atom missing one electron has a positive charge. These get drawn to the plate with the opposite voltage. This all comes into play when smoke enters the ioniation chamber, The smoke particales neutralize the ions, and the smoke alarm detects the drop in currents between the plates so the alarm goes off. A photoelectric smoke alarm is more simple. It contains a photoresistor, and some sort of light source for the detecting process. A photoresistor is just a sensor that detects light. Basically you shine the light at or under the photoresistor. When the smoke enters the smoke detector it will refract the light so that if it was pointing at the photoresistor, there is no more light shining at it, and if you were pointing it under, the light will get detected by the photoresistor. Finally, the ionization/photoelectric alarm is a combination of both alarms. Honestly, these are the best because while ionization alarms respond faster to fast-flame fires, they are signficantly slower at detecting smoldering fires than photoelectric alarms.<br><br>
+			We chose to make the photoelectric smoke alarm. Mainly this was because it's just so much easier to make, with the laser module and photoresistor module we already have, but it's also because ionization alarms have nuclear radiation in them. It's okay though, because the amount is minuscule, but in the bustling workplace we were in we didn't wat anyone accidentally inhaling it because then it would be a danger. Plus, we would actually have to get an ionization chamber and ionizing radiation. The problem with our choice though, was that it was incredibly difficult to make the smoke alarm only react to smoke and not also to the lights witht he low quality materials, and amateur construction skills we had it was incredibly difficult for us to make sure the photoresistor wouldn't react to the wrong thing.
+		</p><br>
+        
+        <h3 class = "header" id = "materials"> Materials Needed </h4>
+		<ul> 
+			<li> One Arduino Uno (Obviously)</li>
+            <li> One Laser module </li>
+            <li> One Photoresistor module </li>
+            <li> One Box (preferably small) with a securing item 
+				<ul> 
+					<li> Elastic Band(s)</li> 
+					<li> Paper Clips</li> 
+					<li> Tape </li> 
+					<li> Lock </li> 
+					<li> etc. </li>
+				</ul>
+				
+			 </li>
+			 <li> 12 Wires
+				 <ul>
+					<li> 6 male to female </li>
+					<li> 4 male to male </li>
+					<li> 2 battery (or one, if they're put together)</li>
+				</ul>
+			</li>
+			<li> One Piezo buzzer </li> 
+			<li> ( Optional) One Breadboard </li>
+		</ul><br>
+		
+		<h3 class = "header" id= "diagram"> Circuit Diagram </h4>
+		<p class = "Paragraph_1"> This whole circuit will be in a box, connected to a 9V battery as its power source. The box will have some tiny slits/a hole in the bottom letting in any smoke. Basically the laser module will be pointing under the photocell, but when the smoke enters it well scatter the light beam and some of it will shine on the pohotocell module. When is lands on the photocell module a really annoying buzzer is programmed to go off. Of course, this is why the lights are so annoying because the code can accidentally mistake the lights/sunlight as the light that the smoke refracted. </p><br>
+		
+		<h3 class = "header"> Code </h4>
+		<p class = "Paragraph_1" id = "code">
+			<i><br><br>
+			int PCellPin = A0; // select the analog input pin for the photoresistor<br>
+			int PCellValue = 0; // Photoresistor Value<br><br>
+
+			int laserPin = 12;// Digital Pin for the laser module<br><br>
+
+			int piezoPin = 8;// Digital pin for the piezo buzzer<br><br>
+
+			void setup() {<br>
+			  Serial.begin(9600); // Begin the serial moniter. 9600 bits per second<br>
+			  pinMode(laserPin, OUTPUT); // The laser is the output, meaning it can provide some energy to other circuits<br>  
+			  digitalWrite(laserPin, HIGH); // this basically turns the laser on<br>
+			}<br><br>
+
+			void loop() {<br><br>
+
+			  PCellValue = analogRead(PCellPin); // Read the photoresistor pin, a value from 1 to 2300; 1 meaning there's lot's of light entering the photoresistor, and 2300 meaning there's no light entering it.<br>
+			  Serial.println(PCellValue); // Print the values the photoreseitor is reading on the serial moniter<br>
+			  delay(20); // Wait for 20 milliseconds<br><br>
+
+			  digitalWrite(laserPin, HIGH); // Turning it on again??? I don't know why this is here<br><br>
+
+			// If the value of the photocell is less than 910 and the value is also less than 900, then turn the buzzer on ( the correct term isn't coming to me ).<br>
+			if( PCellValue < 910 && PCellValue > 900){<br><br>
+    
+			    tone(piezoPin, 1000, 100); // tone function, consult this webpage for more info<br><br>
+    
+			  }<br><br>
+  
+			}<br><br><br>
+		</i>
+		</p>
+		<p class = "Paragraph_1"> 
+			Our code is basically a bunch of variables, and setting up the sensors. After that we basically just have one if statement telling the program what to do if light enters the photocell. We hope the program will perceive the right thing as smoke.
+		</p>
+		<p class = "Paragraph_1"> The only special thing about our code is the function tone();.This function needs two arguments, but can also take three. 
+			<ol class = "Paragraph_2">
+				<li> The pin number </li>
+				<li> The frequency in hertz </li>
+ 			    <li> (optional) The duration </li>
+     		</ol>
+		</p><br>
+		</div>	
+		   
+    </body>
+</html>
+
+	
+	
