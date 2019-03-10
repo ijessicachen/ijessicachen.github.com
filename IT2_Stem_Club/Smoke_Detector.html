@@ -3,197 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>IT2: Smoke Detector</title>
-		
-		<style>
-			
-			.topnav{
-				
-				background-color: rgb( 200, 117, 200 );
-				
-			}
-			
-			.topnav a{ 
-				
-				float: left;
-				color: rgb(0, 0, 0);
-				text-align: center;
-				padding: 16px;
-				text-decoration: none;
-				font-size: 20px;
-				
-			}
-			
-			.topnav a:hover {
-			  background-color: rgb(255, 255, 255);
-			  color: black;
-			}
-			
-			.topnav a.active {
-				
-			  background-color: rgb(220, 50, 0);
-			  color: white;
-			  
-			}
-			
-			.topnav a:hover.active {
-				
-				background-color: lightblue;
-				
-			}
-			
-			#code{
-				
-				background-color: lightblue ;
-				height: 200px;
-				overflow: scroll;
-			}
-			
-			.Paragraph_1{
-				
-				padding-left: 29px;
-				
-			}
-			
-			.Paragraph_2{
-				
-				padding-left: 80px;
-				
-			}
-			
-			#IT2{
-				
-				background-color: rgb(0, 100, 100);
-				border: 10px;
-				border-color: rgb(255, 255, 255);
-				color: white;
-				padding: 15px 25px;
-				text-align: center;
-				font-size: 16px ;
-			}
-		
-			.sticky{
-				
-				position: -webkit-sticky;
-				position: sticky;
-				top: 0px;
-			}
-			
-			.header{
-				
-				color: rgb( 200, 117, 200);
-				
-			}
-			
-			#title{
-				
-				color: rgb( 220, 50, 0);
-			}
-			
-			.sidebar {
-				
-				height: 93%;
-				width:160px;
-				position: fixed;
-				z-index: 1;
-				top:30;
-				left: 0;
-				background-color: rgb(0, 0, 0);
-				overflow-x: hidden;
-				padding-top: 5px;
-				
-			}
-			
-			.sidebar a {
-				
-				padding: 6px 8px 6px 16px;
-				text-decoration: none;
-				font-size: 20px;
-				color: rgb(200, 117, 200);
-				display: block;
-				
-			}
-			
-			.sidebar a:hover {
-				
-				background-color: rgb( 255, 255, 255);
-				
-			}
-			
-			.main {
-				
-				margin-left: 160px;
-				padding: 0px 10px;
-				
-			}
-			
-			#main_text{
-				
-				padding-left: 180px;
-				
-			}
-			
-			#body{
-				
-				margin-left: 0px;
-				margin-right: 0px;
-				margin-top: 0px;
-				
-			}
-			
-			.images{
-				
-				margin: 5px;
-				border: 1px solid black;
-				
-			}
-            
-            
-			.dropbtn {
-			  background-color: rgb(200, 117, 200);
-			  color: black;
-			  padding: 16px;
-			  font-size: 20px;
-			  border: none;
-			  cursor: pointer;
-			}
-
-			.dropdown {
-			  position: relative;
-			  display: inline-block;
-			}
-
-			.dropdown-content {
-			  display: none;
-			  position: absolute;
-			  background-color: rgb(255, 255, 255);
-			  min-width: 160px;
-			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			  z-index: 1;
-			}
-
-			.dropdown-content a {
-			  color: black;
-			  padding: 12px 16px;
-			  text-decoration: none;
-			  display: block;
-			  font-size: 16px;
-			  text-align: left;
-			}
-
-			.dropdown-content a:hover {
-
-			    background-color: #f1f1f1;
-
-			}
-
-			.dropdown:hover .dropdown-content {
-			  display: block;
-			}
-
-			.dropdown:hover .dropbtn {
-			  background-color: #ffffff;
-			}
-		</style>
+	<link href= "ijessicachen.github.com/IT2_Stem_Club/Smoke_Detector.css"/>
     </head>
     <body id="body">
 		
@@ -262,8 +72,8 @@
 					<li> etc. </li>
 				</ul>
 				
-				<a href= "https://thatboringblog.com/" target="_blank" align="right">
-					<img class= "images" align=right src"">
+		                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.7098930652373!2d-79.2326885!3d43.88256200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d7da4deb6df7%3A0x1b2b89db9be2b8c5!2sMarkham+Stouffville+Hospital-+Emergency+Room!5e0!3m2!1sen!2sca!4v1552167436225" target="_blank" align= "right" width="300" height="225" frameborder="0" style="border:0" allowfullscreen> Just in case. </iframe>
+				
 				</a>
 				
 			 </li>
@@ -282,7 +92,6 @@
 		<p class = "Paragraph_1"> This whole circuit will be in a box, connected to a 9V battery as its power source. The box will have some tiny slits/a hole in the bottom letting in any smoke. Basically the laser module will be pointing under the photocell, but when the smoke enters it well scatter the light beam and some of it will shine on the pohotocell module. When is lands on the photocell module a really annoying buzzer is programmed to go off. Of course, this is why the lights are so annoying because the code can accidentally mistake the lights/sunlight as the light that the smoke refracted. </p><br>
 		
 		<h3 class = "header"> Code </h3>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.7098930652373!2d-79.2326885!3d43.88256200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d7da4deb6df7%3A0x1b2b89db9be2b8c5!2sMarkham+Stouffville+Hospital-+Emergency+Room!5e0!3m2!1sen!2sca!4v1552167436225" target="_blank" align= "right" width="300" height="225" frameborder="0" style="border:0" allowfullscreen> Just in case. </iframe>
 		<p class = "Paragraph_1" id = "code">
 			<i><br><br>
 			int PCellPin = A0; // select the analog input pin for the photoresistor<br>
