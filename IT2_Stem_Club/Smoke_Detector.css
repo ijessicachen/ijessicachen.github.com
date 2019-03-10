@@ -1,74 +1,74 @@
-      .topnav{
+	.topnav{
 				
-				background-color: rgb( 200, 117, 200 );
+		background-color: rgb( 200, 117, 200 );
 				
-			}
+	}
 			
-			.topnav a{ 
+	.topnav a{ 
 				
-				float: left;
-				color: rgb(0, 0, 0);
-				text-align: center;
-				padding: 16px;
-				text-decoration: none;
-				font-size: 20px;
+		float: left;
+		color: rgb(0, 0, 0);
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+		font-size: 20px;
 				
-			}
+	}
 			
-			.topnav a:hover {
-			  background-color: rgb(255, 255, 255);
-			  color: black;
-			}
-			
-			.topnav a.active {
-				
-			  background-color: rgb(220, 50, 0);
-			  color: white;
+	.topnav a:hover {
 			  
-			}
+		background-color: rgb(255, 255, 255);
+		color: black;
+	}
 			
-			.topnav a:hover.active {
+	.topnav a.active {
 				
-				background-color: lightblue;
-				
-			}
+		background-color: rgb(220, 50, 0);
+		color: white;
+			  
+	}
 			
-			#code{
+	.topnav a:hover.active {
 				
-				background-color: lightblue ;
-				height: 200px;
-				overflow: scroll;
-			}
+		background-color: lightblue;
+				
+	}
 			
-			.Paragraph_1{
+	#code{
 				
-				padding-left: 29px;
+		background-color: lightblue ;
+		height: 200px;
+		overflow: scroll;
+	}
+						
+	.Paragraph_1{
 				
-			}
+		padding-left: 29px;
+				
+	}
 			
-			.Paragraph_2{
+	.Paragraph_2{
 				
-				padding-left: 80px;
+		padding-left: 80px;
 				
-			}
+	}
 			
-			#IT2{
-				
-				background-color: rgb(0, 100, 100);
-				border: 10px;
-				border-color: rgb(255, 255, 255);
-				color: white;
-				padding: 15px 25px;
-				text-align: center;
-				font-size: 16px ;
-			}
+	#IT2{
+		background-color: rgb(0, 100, 100);
+		border: 10px;
+		border-color: rgb(255, 255, 255);
+		color: white;
+		padding: 15px 25px;
+		text-align: center;
+		font-size: 16px ;
+	}
 		
-			.sticky{
+	.sticky{
 				
-				position: -webkit-sticky;
-				position: sticky;
-				top: 0px;
-			}
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0px;
+	}
 			
 			.header{
 				
@@ -185,3 +185,5 @@
 			.dropdown:hover .dropbtn {
 			  background-color: #ffffff;
 			}
+
+			
