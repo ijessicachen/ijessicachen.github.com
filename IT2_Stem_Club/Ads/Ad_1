@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Smoke_Detector.Ad1</title>
+    <style>
+    
+    #body{
+    
+      background-color: rgb(50, 100, 50, 200);
+      
+    }
+    
+    .header{
+      
+      rgb ( 100, 50, 100 );
+      
+    }
+    
+    </style>
+  </head>
+  <body id= "body">
+  
+    <h1 class= header><strong> DO YOU WANT A CUSTOM MADE GRAVESTONE?</strong><br><br> if you do, don't hesitate and<br> CLICK HERE!</h1>
+    <h6> No batteries included. Not an actual product. No refunds. </h6>
+    
+  </body>
