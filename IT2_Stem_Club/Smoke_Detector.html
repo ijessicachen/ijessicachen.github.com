@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <!-- Header -->
     <head>
         <meta charset="utf-8">
         <title>IT2: Smoke Detector</title>
@@ -7,11 +8,13 @@
     </head>
     <body id="body">
 		
+    <!-- Topnav -->
 	<div class="sticky">
 	<div class="topnav">
 		<a class="active" href=""> <strong>IT2</strong> </a>
 		<a href=""> <strong>Projects</strong> </a>
 
+        <!-- Shopping Dropdown -->
 <div class="dropdown">
   <button class="dropbtn">Shopping</button>
   <div class="dropdown-content">
@@ -55,14 +58,12 @@
 		
 			There are three types of fire alarms: ionization, photoelectric, and ionization/photoelectric. An ionization smoke alarm has an ionization chamber in it, and that's basically two plates with a voltage across them. This smoke alarm also has a radioactive source of ionizing radiation. These work together like this: the particles generated ionize the oxygen and nitrogen atoms of the air in the chamber. Basically, ionizing knocks electrons off of atoms. The electron without an atom has a negative charge, while the atom missing one electron has a positive charge. These get drawn to the plate with the opposite voltage. This all comes into play when smoke enters the ioniation chamber, The smoke particales neutralize the ions, and the smoke alarm detects the drop in currents between the plates so the alarm goes off. A photoelectric smoke alarm is more simple. It contains a photoresistor, and some sort of light source for the detecting process. A photoresistor is just a sensor that detects light. Basically you shine the light at or under the photoresistor. When the smoke enters the smoke detector it will refract the light so that if it was pointing at the photoresistor, there is no more light shining at it, and if you were pointing it under, the light will get detected by the photoresistor. Finally, the ionization/photoelectric alarm is a combination of both alarms. Honestly, these are the best because while ionization alarms respond faster to fast-flame fires, they are signficantly slower at detecting smoldering fires than photoelectric alarms.<br><br>
 			
-			<iframe>
-			
 			We chose to make the photoelectric smoke alarm. Mainly this was because it's just so much easier to make, with the laser module and photoresistor module we already have, but it's also because ionization alarms have nuclear radiation in them. It's okay though, because the amount is minuscule, but in the bustling workplace we were in we didn't wat anyone accidentally inhaling it because then it would be a danger. Plus, we would actually have to get an ionization chamber and ionizing radiation. The problem with our choice though, was that it was incredibly difficult to make the smoke alarm only react to smoke and not also to the lights. with the low quality materials, and amateur construction skills we had it was incredibly difficult for us to make sure the photoresistor wouldn't react to the wrong thing.
         
         </p><br>
         
         <h3 class = "header" id = "materials"> Materials Needed </h4>
-		<iframe src="http://ijessicachen.github.io/IT2_Stem_Club/Ads/Ad_1.html" target="_blank" align= "right" width="150" height="300" frameborder="0" style="border:0" allowfullscreen> Just in case. </iframe>
+		<iframe src="https://ijessicachen.github.io/IT2_Stem_Club/Ads/Ad_1.html" target="_blank" align= "right" width="150" height="300" frameborder="0" style="border:0" allowfullscreen> Just in case. </iframe>
 		<ul> 
 			<li> One Arduino Uno (Obviously)</li>
             <li> One Laser module </li>
@@ -88,6 +89,7 @@
 			<li> ( Optional) One Breadboard </li>
 		</ul><br>
 		
+        <iframe src="https://ijessicachen.github.io/IT2_Stem_Club/Ads/Ad_2.html" target="_blank" align="right" width="150" height="300" frameborder="0" style="border:0" allowfullscreen> </iframe>
 		<h3 class = "header" id= "diagram"> Circuit Diagram </h4>
 		<p class = "Paragraph_1"> This whole circuit will be in a box, connected to a 9V battery as its power source. The box will have some tiny slits/a hole in the bottom letting in any smoke. Basically the laser module will be pointing under the photocell, but when the smoke enters it well scatter the light beam and some of it will shine on the pohotocell module. When is lands on the photocell module a really annoying buzzer is programmed to go off. Of course, this is why the lights are so annoying because the code can accidentally mistake the lights/sunlight as the light that the smoke refracted. </p><br>
 		
@@ -126,7 +128,9 @@
 		</i>
 		</p>
 			
-		<p class = "Paragraph_1"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2875.709893065238!2d-79.2326885!3d43.882562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d7da4deb6df7%3A0x1b2b89db9be2b8c5!2sMarkham+Stouffville+Hospital-+Emergency+Room!5e0!3m2!1sen!2sca!4v1554592232763!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        <p class = "Paragraph_1"> 
 			Our code is basically a bunch of variables, and setting up the sensors. After that we basically just have one if statement telling the program what to do if light enters the photocell. We hope the program will perceive the right thing as smoke.
 		</p>
 		<p class = "Paragraph_1"> The only special thing about our code is the function tone();.This function needs two arguments, but can also take three. 
@@ -137,7 +141,6 @@
      		</ol>
 		</p><br>
 	   
-	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.7098930652373!2d-79.2326885!3d43.88256200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d7da4deb6df7%3A0x1b2b89db9be2b8c5!2sMarkham+Stouffville+Hospital-+Emergency+Room!5e0!3m2!1sen!2sca!4v1552167436225" target="_blank" align= "right" width="300" height="225" frameborder="0" style="border:0" allowfullscreen> Just in case. </iframe>
 	
         <div id="Examples">
 		    <a href= "https://docs.google.com/presentation/d/12Us_u2uj7KtdO7S6xS-QItENCWjyy9ZlEXOKE36CFv0/edit#slide=id.p" target="_blank">
